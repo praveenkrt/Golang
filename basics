@@ -1,0 +1,11 @@
+variables program
+==================
+package main
+import "fmt"
+func main() {
+    var n int64 
+    var k bool 
+    fmt.Printf("%T",k)
+    _ = n // Indicates i am aware of unused variable
+}
+==================
