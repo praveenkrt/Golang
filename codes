@@ -29,6 +29,7 @@ func main() {
 }
 
 
+
 to check whether the key is present in the map
 ===============================================
 package main
@@ -41,4 +42,33 @@ func main() {
   fmt.Printf("%v\n",v)
   fmt.Printf("%v",ok)
   
+}
+
+
+
+switch statements in golang 
+============================
+There is one interesting stuff in go lang switch case in programming languages like java if i did't mention break after each case then it runs upto the last  but here it won't happen like that
+if we want to make it to move to the next case we need to manually configure by using fallthrough keyword
+
+package main
+import "fmt"
+func main() {
+    fmt.Println("Enter the number to check ")
+    var a int 
+    fmt.Scanf("%d",&a)
+   // fmt.Printf("%v",a)
+    switch a{
+        case 10:
+            fmt.Println("The number is 10")
+            //fallthrough
+        case 20:
+            fmt.Println("The number is 20")
+            //fallthrough
+        case 30:
+            fmt.Println("The number is 30")
+            //fallthrough
+        default:
+            fmt.Println("The number is either of all the above three")
+    } 
 }
