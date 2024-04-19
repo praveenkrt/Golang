@@ -72,3 +72,26 @@ func main() {
             fmt.Println("The number is either of all the above three")
     } 
 }
+
+one more example for switch case where actually fallthough should be used 
+=========================================================================
+package main
+import "fmt"
+func main() {
+    fmt.Println("Enter the number to check ")
+    var a int 
+    fmt.Scanf("%d",&a)
+    switch {
+        case 10>5:
+            fmt.Println("Yes 10 is greater than 5")
+            fallthrough
+        case 20==20:
+            fmt.Println("Yes 20 is equal to 20")
+            fallthrough
+        case 30>10:
+            fmt.Println("Yes the number 30 is lesser than 10")
+            fallthrough
+        default:
+            fmt.Println("None of the above is true")
+    }
+}
