@@ -1,0 +1,12 @@
+converting integer to string using sprintf
+==========================================
+package main
+import "fmt"
+
+func main() {
+   start := 97
+   //end := 122
+   
+   character := fmt.Sprintf("%c",start)
+   fmt.Printf("%v",character)
+}
