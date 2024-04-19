@@ -10,3 +10,20 @@ func main() {
    character := fmt.Sprintf("%c",start)
    fmt.Printf("%v",character)
 }
+
+
+
+map in go lang (similat to dictionary in py)
+==============
+
+package main
+import "fmt"
+
+func main() {
+  ru := map[string]int{"Krish":90, "Raju":56}
+  ru["Ravi"]=88 // to add a key value pair 
+  ru["Raju"]=84 //to modify the key value pair
+  fmt.Println(ru)
+  delete(ru,"Ravi") // to delete a key value pair 
+  fmt.Println(ru)
+}
