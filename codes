@@ -27,3 +27,18 @@ func main() {
   delete(ru,"Ravi") // to delete a key value pair 
   fmt.Println(ru)
 }
+
+
+to check whether the key is present in the map
+===============================================
+package main
+import "fmt"
+
+func main() {
+  ru := map[string]int{"Krish":90, "Raju":56}
+  ru["Ravi"]=88
+  v, ok := ru["Krish"]
+  fmt.Printf("%v\n",v)
+  fmt.Printf("%v",ok)
+  
+}
